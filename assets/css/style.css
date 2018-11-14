@@ -1,10 +1,25 @@
-button {
-    display: block;
-    margin-top: 20px; 
-}
 #restart {
     visibility: hidden;
+    margin-top: 25px;
 }
 .answers {
     visibility: hidden;
+    display: block;
+    margin: 15px auto;
+}
+.content {
+    text-align: center;
+    justify-content: center;
+    background-color: rgba(255, 255, 255, 0.884);
+}
+body {
+    background-image: url(../images/alchemy.gif);
+    color: gray;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+#timer {
+    margin: 10px auto;
+}
+#question, #result {
+    font-size: 25px;
 }

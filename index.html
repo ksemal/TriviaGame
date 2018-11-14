@@ -1,31 +1,35 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Trivia-game</title>
+    <link rel="stylesheet" href="assets/css/reset.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
     <link rel="stylesheet" href="assets/css/style.css">
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script type="text/javascript" src="assets/javascript/app.js"></script>
 </head>
+
 <body>
-<div class="container">
-    <div class="jumbotron mx-5 my-4">
-        <h1 class="display-4">Trivia Game</h1>
-        <hr class="my-4">
-        <button class="btn btn-light btn-lg" id="start">start</button>
-        <div id="timer"></div>
-        <div id="question"></div>
-        <div id="result"></div>
-        <button class="answers btn btn-light btn-lg" id="answerA" value="a"></button>
-        <button class="answers btn btn-primary btn-lg" id="answerB" value="b"></button>
-        <button class="answers btn btn-primary btn-lg" id="answerC" value="c"></button>
-        <button class="answers btn btn-primary btn-lg" id="answerD" value="d"></button>
-        <button class="btn btn-light btn-lg" id="restart">restart</button>
+    <div class="container">
+        <div class="content jumbotron mx-5 my-4">
+            <h1 class="display-4">Trivia Game</h1>
+            <hr class="my-4">
+            <button class="btn btn-secondary px-5" id="start">start</button>
+            <div id="timer"></div>
+            <div id="question"></div>
+            <div id="result"></div>
+            <button class="btn btn-secondary px-5" id="restart">restart</button>
+            <button class="answers btn btn-outline-danger" id="answerA" value="a"></button>
+            <button class="answers btn btn-outline-success" id="answerB" value="b"></button>
+            <button class="answers btn btn-outline-warning" id="answerC" value="c"></button>
+            <button class="answers btn btn-outline-info" id="answerD" value="d"></button>
+        </div>
     </div>
-</div>
-    
+
 </body>
+
 </html>

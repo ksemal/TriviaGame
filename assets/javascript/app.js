@@ -1,4 +1,4 @@
-$(document).ready(function() {
+$(document).ready(function () {
 
     var myQuestions = [
         {
@@ -106,14 +106,14 @@ $(document).ready(function() {
         //     correctAnswer: "b"
         // }
     ];
-   
-    var timeLeft=5;
+
+    var timeLeft = 5;
     var n = 0;
     var correctAnswers = 0;
     var inCorrectAnswers = 0;
     var unAnswered = 0;
     var startShowTime;
-    
+
     function nextQuestion() {
         n++;
 
@@ -131,7 +131,7 @@ $(document).ready(function() {
             $("#answerC").text(myQuestions[n].c);
             $("#answerD").text(myQuestions[n].d);
             startShowTime = setInterval(showTime, 1000);
-        }   
+        }
     }
 
     function showCorrectAnswer() {
@@ -140,7 +140,7 @@ $(document).ready(function() {
         clearInterval(startShowTime);
         $("#timer").text("Time ramaining: " + timeLeft + " sec");
         $("#result").text("Correct!");
-        timeLeft = 5;  
+        timeLeft = 5;
     }
 
     function showInCorrectAnswer() {
@@ -149,7 +149,7 @@ $(document).ready(function() {
         clearInterval(startShowTime);
         $("#timer").text("Time ramaining: " + timeLeft + " sec");
         $("#result").html("Nope! <br> The correct answer was: " + myQuestions[n][myQuestions[n].correctAnswer]);
-        timeLeft = 5;   
+        timeLeft = 5;
     }
 
     function showUnAnswered() {
@@ -157,7 +157,7 @@ $(document).ready(function() {
         $(".answers").css("visibility", "hidden");
         $("#timer").text("Time ramaining: 0 sec");
         $("#result").html("Out of time! <br> The correct answer was: " + myQuestions[n][myQuestions[n].correctAnswer]);
-        timeLeft = 5;    
+        timeLeft = 5;
     }
 
     function showTime() {
@@ -168,37 +168,40 @@ $(document).ready(function() {
             clearInterval(startShowTime);
             showUnAnswered();
             setTimeout(nextQuestion, 3000);
-        } 
+        }
     }
 
     function start() {
+
         $("#restart").css("visibility", "hidden");
+        $("#start").css("visibility", "hidden");
         $("#question").text(myQuestions[n].question);
         $("#answerA").text(myQuestions[n].a);
         $("#answerB").text(myQuestions[n].b);
         $("#answerC").text(myQuestions[n].c);
         $("#answerD").text(myQuestions[n].d);
         $(".answers").css("visibility", "visible");
+        $("#question").css("visibility", "visible");
         $("#timer").text("Time ramaining: ");
-        startShowTime = setInterval(showTime, 1000);  
+        startShowTime = setInterval(showTime, 1000);
     }
 
     $("#start").on("click", start);
 
-    $(".answers").on("click", function() {
+    $(".answers").on("click", function () {
         var value = $(this).val();
         if (value === myQuestions[n].correctAnswer) {
             correctAnswers++;
             clearInterval(startShowTime);
             showCorrectAnswer();
             setTimeout(nextQuestion, 3000);
-            
+
         } else if (value !== myQuestions[n].correctAnswer) {
             inCorrectAnswers++;
             clearInterval(startShowTime);
             showInCorrectAnswer();
             setTimeout(nextQuestion, 3000);
-        }  
+        }
     });
 
     function atTheEnd() {
@@ -207,14 +210,14 @@ $(document).ready(function() {
         $("#restart").css("visibility", "visible");
     }
 
-    $("#restart").on("click", function() {
+    $("#restart").on("click", function () {
         $("#result").text("");
-        timeLeft=5;
+        timeLeft = 5;
         n = 0;
         correctAnswers = 0;
         inCorrectAnswers = 0;
         unAnswered = 0;
         start();
     });
-    
+
 });
