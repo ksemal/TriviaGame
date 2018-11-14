@@ -16,95 +16,95 @@ $(document).ready(function () {
             c: "Columbus",
             d: "Baltimore",
             correctAnswer: "a"
-        }//,
-        // {
-        //     question: "What was Karl Marx’s favorite color?",
-        //     a: "Brown",
-        //     b: "Blue",
-        //     c: "Red",
-        //     d: "Purple",
-        //     correctAnswer: "c"
-        // },
-        // {
-        //     question: "What’s the best way to stop crying while peeling onions?",
-        //     a: "Lick almonds",
-        //     b: "Suck lemons",
-        //     c: "Eat cheese",
-        //     d: "Chew gum",
-        //     correctAnswer: "d"
-        // },
-        // {
-        //     question: "Which animal sleeps for only five minutes a day?",
-        //     a: "A chameleon",
-        //     b: "A koala",
-        //     c: "A giraffe",
-        //     d: "A beaver",
-        //     correctAnswer: "c"
-        // },
-        // {
-        //     question: "One human hair can support how many kilograms?",
-        //     a: "Three",
-        //     b: "Five",
-        //     c: "Seven",
-        //     d: "Nine",
-        //     correctAnswer: "a"
-        // },
-        // {
-        //     question: "Which European city is home to the Fairy Investigation Society?",
-        //     a: "Poznan",
-        //     b: "Dublin",
-        //     c: "Bratislava",
-        //     d: "Tallinn",
-        //     correctAnswer: "b"
-        // },
-        // {
-        //     question: "What’s a frog’s favorite color?",
-        //     a: "Blue",
-        //     b: "Orange",
-        //     c: "Yellow",
-        //     d: "Brown",
-        //     correctAnswer: "a"
-        // },
-        // {
-        //     question: "Which one of these planets rotates clockwise?",
-        //     a: "Uranus",
-        //     b: "Mercury",
-        //     c: "Pluto",
-        //     d: "Venus",
-        //     correctAnswer: "d"
-        // },
-        // {
-        //     question: "Which country leads the world in cork production?",
-        //     a: "Greece",
-        //     b: "Australia",
-        //     c: "Spain",
-        //     d: "Mexico",
-        //     correctAnswer: "c"
-        // },
-        // {
-        //     question: "What color was Coca-Cola originally?",
-        //     a: "Red",
-        //     b: "Purple",
-        //     c: "Beige",
-        //     d: "Green",
-        //     correctAnswer: "d"
-        // },
-        // {
-        //     question: "Bubble gum contains what?",
-        //     a: "Plastic",
-        //     b: "Calcium",
-        //     c: "Rubber",
-        //     d: "Pepper",
-        //     correctAnswer: "c"
-        // },
-        // {
-        //     question: "The inventor of the paint roller was of which nationality?",
-        //     a: "Hungarian",
-        //     b: "Canadian",
-        //     c: "Norwegian",
-        //     d: "Argentinian",
-        //     correctAnswer: "b"
-        // }
+        },
+        {
+            question: "What was Karl Marx’s favorite color?",
+            a: "Brown",
+            b: "Blue",
+            c: "Red",
+            d: "Purple",
+            correctAnswer: "c"
+        },
+        {
+            question: "What’s the best way to stop crying while peeling onions?",
+            a: "Lick almonds",
+            b: "Suck lemons",
+            c: "Eat cheese",
+            d: "Chew gum",
+            correctAnswer: "d"
+        },
+        {
+            question: "Which animal sleeps for only five minutes a day?",
+            a: "A chameleon",
+            b: "A koala",
+            c: "A giraffe",
+            d: "A beaver",
+            correctAnswer: "c"
+        },
+        {
+            question: "One human hair can support how many kilograms?",
+            a: "Three",
+            b: "Five",
+            c: "Seven",
+            d: "Nine",
+            correctAnswer: "a"
+        },
+        {
+            question: "Which European city is home to the Fairy Investigation Society?",
+            a: "Poznan",
+            b: "Dublin",
+            c: "Bratislava",
+            d: "Tallinn",
+            correctAnswer: "b"
+        },
+        {
+            question: "What’s a frog’s favorite color?",
+            a: "Blue",
+            b: "Orange",
+            c: "Yellow",
+            d: "Brown",
+            correctAnswer: "a"
+        },
+        {
+            question: "Which one of these planets rotates clockwise?",
+            a: "Uranus",
+            b: "Mercury",
+            c: "Pluto",
+            d: "Venus",
+            correctAnswer: "d"
+        },
+        {
+            question: "Which country leads the world in cork production?",
+            a: "Greece",
+            b: "Australia",
+            c: "Spain",
+            d: "Mexico",
+            correctAnswer: "c"
+        },
+        {
+            question: "What color was Coca-Cola originally?",
+            a: "Red",
+            b: "Purple",
+            c: "Beige",
+            d: "Green",
+            correctAnswer: "d"
+        },
+        {
+            question: "Bubble gum contains what?",
+            a: "Plastic",
+            b: "Calcium",
+            c: "Rubber",
+            d: "Pepper",
+            correctAnswer: "c"
+        },
+        {
+            question: "The inventor of the paint roller was of which nationality?",
+            a: "Hungarian",
+            b: "Canadian",
+            c: "Norwegian",
+            d: "Argentinian",
+            correctAnswer: "b"
+        }
     ];
 
     var timeLeft = 5;
