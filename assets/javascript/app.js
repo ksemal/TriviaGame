@@ -107,7 +107,7 @@ $(document).ready(function () {
         }
     ];
 
-    var timeLeft = 5;
+    var timeLeft = 10;
     var n = 0;
     var correctAnswers = 0;
     var inCorrectAnswers = 0;
@@ -140,7 +140,7 @@ $(document).ready(function () {
         clearInterval(startShowTime);
         $("#timer").text("Time ramaining: " + timeLeft + " sec");
         $("#result").text("Correct!");
-        timeLeft = 5;
+        timeLeft = 10;
     }
 
     function showInCorrectAnswer() {
@@ -149,7 +149,7 @@ $(document).ready(function () {
         clearInterval(startShowTime);
         $("#timer").text("Time ramaining: " + timeLeft + " sec");
         $("#result").html("Nope! <br> The correct answer was: " + myQuestions[n][myQuestions[n].correctAnswer]);
-        timeLeft = 5;
+        timeLeft = 10;
     }
 
     function showUnAnswered() {
@@ -157,7 +157,7 @@ $(document).ready(function () {
         $(".answers").css("visibility", "hidden");
         $("#timer").text("Time ramaining: 0 sec");
         $("#result").html("Out of time! <br> The correct answer was: " + myQuestions[n][myQuestions[n].correctAnswer]);
-        timeLeft = 5;
+        timeLeft = 10;
     }
 
     function showTime() {
@@ -212,7 +212,7 @@ $(document).ready(function () {
 
     $("#restart").on("click", function () {
         $("#result").text("");
-        timeLeft = 5;
+        timeLeft = 10;
         n = 0;
         correctAnswers = 0;
         inCorrectAnswers = 0;
